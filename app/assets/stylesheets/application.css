@@ -1,0 +1,76 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+ul {
+	list-style: none;
+	/*margin: 0;*/
+	/*padding: 0;*/
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.nav {
+	background-color: #343a40;
+	padding: .5rem 1rem;
+}
+
+.nav .container {
+	display: flex;
+}
+
+.nav-list {
+	margin-bottom: 0;
+}
+
+.nav-list-item a {
+	color: #f8f9fa;
+	padding: 1rem 0.5rem;
+}
+
+.nav-list-item a:hover {
+    text-decoration: none;
+}
+
+.nav-list-item a:focus,
+.nav-list-item a:hover {
+    color: #cbd3da!important;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+/*スマホ対応*/
+.nav-lg .container {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-lg .nav-list {
+	display: flex;
+	flex-direction: row;
+	/*margin-top: 0;*/
+	/*margin-bottom: 0;*/
+}
